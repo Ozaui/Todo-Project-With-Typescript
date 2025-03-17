@@ -1,6 +1,6 @@
 body {
-  padding: 0px;
-  margin: 0px;
+  margin: 0;
+  padding: 0;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -10,6 +10,7 @@ body {
 
 .todo-create {
   width: 500px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,28 +18,38 @@ body {
   border: 1px solid #ccc;
   border-radius: 5px;
   margin-top: 20px;
-  padding: 10px;
 }
 
-.input-todo-create {
+.todo-create-input {
   width: 100%;
   border: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ccc;
   outline: none;
-  margin-bottom: 5px;
 }
 
-.button-todo-create {
+.todo-create-button {
+  margin-top: 10px;
   border: none;
   padding: 5px 10px;
   border-radius: 2px;
-  background-color: #007bff;
-  color: white;
-  font-weight: bold;
+  color: black;
+  background-color: #ccc;
+  font-weight: 700;
   cursor: pointer;
 }
 
-.icons {
-  font-size: 25px;
+.todo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.todo-icon {
+  font-size: 22px;
+  margin-right: 5px;
   cursor: pointer;
 }
